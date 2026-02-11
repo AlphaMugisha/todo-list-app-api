@@ -38,5 +38,5 @@ app.put('/tasks/:id', (req, res) => {
   console.log("PUT /tasks/:id called with id:", id, "and updated task:", updatedTask);
   tasks.title = updatedTask.title;
   tasks.completed = updatedTask.completed;
-  res.send(`Task with id ${id} updated`);
+  res.send(`Task with id ${id} updated to title: ${tasks.title}, completed: ${tasks.completed}`);
 });
