@@ -31,3 +31,9 @@ app.get ('/tasks/:id', (req, res) => {
   const task = tasks.find(t => t.id == id);
   res.json(task);
 });
+
+app.put('/tasks/:id', (req, res) => {
+  const id = req.params.id;
+  const updatedTask = req.body;
+  console.log("PUT /tasks/:id called with id:", id, "and updated task:", updatedTask);
+});
