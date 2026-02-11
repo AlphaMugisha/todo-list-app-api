@@ -40,3 +40,10 @@ app.put('/tasks/:id', (req, res) => {
   tasks.completed = updatedTask.completed;
   res.send(`Task with id ${id} updated to title: ${tasks.title}, completed: ${tasks.completed}`);
 });
+
+app.delete('/tasks/:id', (req, res) => {
+  const id = req.params.id;
+  console.log("DELETE /tasks/:id called with id:", id);
+  tasks = tasks.filter(t => t.id != id);
+  res.send(`Task with id ${id} deleted`);
+});
