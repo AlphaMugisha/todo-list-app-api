@@ -17,3 +17,7 @@ app.get('/tasks', (req, res) => {
   console.log("GET /tasks called");
   res.json(tasks);
 });
+
+app.post('/tasks', (req, res) => {
+  const { title } = req.body;
+});
