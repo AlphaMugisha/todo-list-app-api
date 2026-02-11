@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.use(express.json());
+app.use(express.json()); // to allow json files that will be sent from the client
 
 let tasks = [
   { id: 1, title: 'Learn Node.js', completed: false },
