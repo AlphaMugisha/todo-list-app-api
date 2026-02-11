@@ -37,5 +37,4 @@ Each task contains:
 
 ## 🎥 YouTube Channel
 
-I share programming tutorials and projects here:  
 👉 https://www.youtube.com/channel/UCfiXrFgX8tVJ_6QDT7CpN3A
