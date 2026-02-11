@@ -24,3 +24,9 @@ app.post('/tasks', (req, res) => {
   tasks.push(newTask);
   res.status(201).json(newTask);
 });
+
+app.get ('/tasks/:id', (req, res) => {
+  const id = req.params.id;
+  console.log("GET /tasks/:id called with id:", id);
+  res.json(tasks);
+});
