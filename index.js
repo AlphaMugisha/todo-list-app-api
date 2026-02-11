@@ -28,5 +28,6 @@ app.post('/tasks', (req, res) => {
 app.get ('/tasks/:id', (req, res) => {
   const id = req.params.id;
   console.log("GET /tasks/:id called with id:", id);
-  res.json(tasks);
+  const task = tasks.find(t => t.id == id);
+  res.json(task);
 });
