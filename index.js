@@ -19,5 +19,7 @@ app.get('/tasks', (req, res) => {
 });
 
 app.post('/tasks', (req, res) => {
-  const { title } = req.body;
+  const newTask = req.body;
+  tasks.push(newTask);
+  res.status(201).json(newTask);
 });
