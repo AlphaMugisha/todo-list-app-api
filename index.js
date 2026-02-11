@@ -20,6 +20,7 @@ app.get('/tasks', (req, res) => {
 
 app.post('/tasks', (req, res) => {
   const newTask = req.body;
+  console.log("POST /tasks called:", newTask);
   tasks.push(newTask);
   res.status(201).json(newTask);
 });
