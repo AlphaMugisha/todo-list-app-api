@@ -27,7 +27,7 @@ Each task contains:
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 - Data is stored **in memory**
 - All tasks reset when the server restarts
